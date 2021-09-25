@@ -69,4 +69,7 @@ export default defineConfig({
   mfsu: {},
   webpack5: {},
   exportStatic: {},
+  chainWebpack(config, { webpack }) {
+    config.module.rule('mjs-rule').test(/.m?js/).resolve.set('fullySpecified', false);
+  },
 });
