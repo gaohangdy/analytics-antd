@@ -1,5 +1,11 @@
 ﻿export default [
   {
+    name: 'dashboard',
+    icon: 'dashboard',
+    path: '/dashboard',
+    component: './dashboard',
+  },
+  {
     path: '/user',
     layout: false,
     routes: [
